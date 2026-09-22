@@ -13,9 +13,9 @@ public class Main {
             String id = scanner.next();
             int pages = scanner.nextInt();
 
-            if (type.equals("MONO")) {
+            if (type == "MONO") {
                 jobs.add(new MonoPrint(id, pages));
-            } else if (type.equals("COLOUR")) {
+            } else if (type == "COLOUR") {
                 jobs.add(new ColourPrint(id, pages));
             }
         }
